@@ -1,0 +1,17 @@
+1. SELECT COUNT(CountryCode) FROM city WHERE CountryCode = "USA"; 
+2. SELECT Name, Population, LifeExpectancy FROM country WHERE Name = "Argentina";
+3. SELECT Name, LifeExpectancy FROM country WHERE LifeExpectancy IS NOT NULL ORDER BY LifeExpectancy DESC;
+4. SELECT * FROM city t1 JOIN country t2 ON t1.ID=t2.Capital WHERE t2.Name="Spain";
+5. SELECT DISTINCT Language FROM country t1 JOIN  countrylanguage t2 WHERE Region ="Southeast Asia";
+6. SELECT * FROM city WHERE name LIKE "F%" LIMIT 25;
+7. SELECT COUNT(*) FROM city t1 JOIN country t2 ON t1.CountryCode=t2.Code WHERE Code="CHN";
+8. SELECT * FROM country WHERE Population IS NOT NULL ORDER BY Population ASC LIMIT 1;
+9. SELECT COUNT(Name) FROM country;
+10. SELECT Name, SurfaceArea FROM country WHERE SurfaceArea ORDER BY SurfaceArea DESC LIMIT 10;
+11. SELECT Name, Population FROM city WHERE CountryCode="JPN" ORDER BY Population DESC LIMIT 5;
+12. UPDATE country SET HeadOfState = "Elizabeth II" WHERE HeadOfState = "Elisabeth II";
+    SELECT Name, Code FROM country WHERE HeadOfState = "Elizabeth II";
+13. SELECT Name, Population/SurfaceArea AS poparea FROM country ORDER BY poparea IS NOT NULL, poparea ASC  LIMIT 10;
+14. SELECT DISTINCT Language FROM countrylanguage;
+15. SELECT Name, GNP FROM country ORDER BY GNP DESC LIMIT 10;
+16. 
